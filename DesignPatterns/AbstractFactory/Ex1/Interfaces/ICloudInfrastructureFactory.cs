@@ -9,4 +9,6 @@ public interface ICloudInfrastructureFactory
     IDataStorage CreateDataStorage();
     IAuthService CreateAuthService();
     IMessageQueue CreateMessageQueue();
+    
+    
 }

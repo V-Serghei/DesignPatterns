@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using DesignPatterns.FactoryMethod.Ex1.abstracts;
 
 namespace DesignPatterns.FactoryMethod.Ex1.concrete;
@@ -17,4 +18,5 @@ public class PdfDocument:Document
     {
         return new PdfProcessor();
     }
+    
 }

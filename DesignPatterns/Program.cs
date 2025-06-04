@@ -2,6 +2,8 @@
 using DesignPatterns.AbstractFactory.Ex1.Concrete;
 using DesignPatterns.FactoryMethod.Ex1.abstracts;
 using DesignPatterns.FactoryMethod.Ex1.concrete;
+using DesignPatterns.FactoryMethod.Ex2.abstracts;
+using DesignPatterns.FactoryMethod.Ex2.concrete;
 
 namespace DesignPatterns;
 
@@ -19,6 +21,15 @@ internal static class Program
         pdf.Process();
         Console.WriteLine("////////////////////////////");
         word.Process();
+        Console.WriteLine("////////////////////////////");
+        
+        Sender mailSender = new MailSenderCreator("Hello, this is a test email!");
+        mailSender.Send();
+        Console.WriteLine("////////////////////////////");
+        
+        Sender smsSender = new SmsSenderCreator("Hello, this is a test SMS!");
+        smsSender.Send();
+        
         
         Console.WriteLine("////////////////////////////");
         Console.WriteLine("////////////////////////////");

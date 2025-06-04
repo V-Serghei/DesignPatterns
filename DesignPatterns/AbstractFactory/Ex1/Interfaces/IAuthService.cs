@@ -9,6 +9,5 @@ public interface IAuthService
 {
     bool AuthenticateUser(string user, string password);
     void RegisterUser(string user, string password);
-    // Authentication service needs data storage
     void SetDataStorage(IDataStorage storage);
 }

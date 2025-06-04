@@ -26,7 +26,5 @@ public abstract class Document
         processor.Analyze();
         processor.Save(FileName);
         processor.Close();
-        
-        
     }
 }
