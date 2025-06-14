@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <Folder Include="AbstractFactory\Ex2\" />
+      <Folder Include="Client\BRIDGE\" />
       <Folder Include="FactoryMethod\Ex1\" />
     </ItemGroup>
 
