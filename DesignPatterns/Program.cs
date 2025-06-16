@@ -4,6 +4,11 @@ using DesignPatterns.AbstractFactory.Ex1.Interfaces;
 using DesignPatterns.BUILDER;
 using DesignPatterns.BUILDER.Ex1;
 using DesignPatterns.Client.ADAPTER;
+using DesignPatterns.Client.Composite;
+using DesignPatterns.Client.Decorator;
+using DesignPatterns.Client.Facade;
+using DesignPatterns.Client.StateClient;
+using DesignPatterns.Client.Strategy;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.FactoryMethod.Ex1.abstracts;
 using DesignPatterns.FactoryMethod.Ex1.concrete;
@@ -153,12 +158,28 @@ internal static class Program
             Console.WriteLine("\nWarrior 1 after prototype modification (should be unchanged):");
             warrior1.Display();
         }
-       // var adapter = new ClientAdapter();
-       // adapter.Run();
+        // var adapter = new ClientAdapter();
+        // adapter.Run();
 
         
-        var bridge = new ClientBridge();
-        bridge.Run();
-
+        // var bridge = new ClientBridge();
+        // bridge.Run();
+        
+        // var composite = new ClientComposite();
+        // composite.Run();
+        
+        
+        // var decorator = new ClinentDecorator();
+        // decorator.Run();
+        
+        // var facade = new ClientFacade();
+        // facade.Run();
+        
+        // var state = new StateClients();
+        // state.Run();
+        
+        var strategy = new StrategyClient();
+        strategy.Run();
+        
     }
 }
