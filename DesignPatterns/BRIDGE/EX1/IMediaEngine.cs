@@ -7,7 +7,5 @@ public interface IMediaEngine
     void PausePlayback();
     void StopPlayback();
     void ReleaseResources();
-    void SetAudioParameter(string name, string value);
-    void SetVideoParameter(string name, string value);
-    void SetStreamingParameter(string name, string value);
+    void SetParameter(string name, string value);
 }

@@ -27,18 +27,10 @@ public class WindowsMediaEngine : IMediaEngine
         Console.WriteLine("Windows Media Engine: Releasing DirectX resources");
     }
 
-    public void SetAudioParameter(string name, string value)
+    public void SetParameter(string name, string value)
     {
         Console.WriteLine($"Windows Media Engine: Setting audio parameter {name} to {value}");
     }
 
-    public void SetVideoParameter(string name, string value)
-    {
-        Console.WriteLine($"Windows Media Engine: Setting video parameter {name} to {value}");
-    }
-
-    public void SetStreamingParameter(string name, string value)
-    {
-        Console.WriteLine($"Windows Media Engine: Setting streaming parameter {name} to {value}");
-    }
+  
 }

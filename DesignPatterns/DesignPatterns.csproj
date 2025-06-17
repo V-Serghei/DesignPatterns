@@ -10,7 +10,6 @@
     <ItemGroup>
       <Folder Include="AbstractFactory\Ex2\" />
       <Folder Include="FactoryMethod\Ex1\" />
-      <Folder Include="Proxy\ex1\" />
     </ItemGroup>
 
 </Project>

@@ -27,18 +27,8 @@ public class MacOSMediaEngine : IMediaEngine
         Console.WriteLine("macOS Media Engine: Releasing Core Audio resources");
     }
 
-    public void SetAudioParameter(string name, string value)
+    public void SetParameter(string name, string value)
     {
         Console.WriteLine($"macOS Media Engine: Setting audio parameter {name} to {value}");
-    }
-
-    public void SetVideoParameter(string name, string value)
-    {
-        Console.WriteLine($"macOS Media Engine: Setting video parameter {name} to {value}");
-    }
-
-    public void SetStreamingParameter(string name, string value)
-    {
-        Console.WriteLine($"macOS Media Engine: Setting streaming parameter {name} to {value}");
     }
 }

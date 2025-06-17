@@ -4,11 +4,20 @@ using DesignPatterns.AbstractFactory.Ex1.Interfaces;
 using DesignPatterns.BUILDER;
 using DesignPatterns.BUILDER.Ex1;
 using DesignPatterns.Client.ADAPTER;
+using DesignPatterns.Client.ChainOfResponsibility;
+using DesignPatterns.Client.Command;
 using DesignPatterns.Client.Composite;
 using DesignPatterns.Client.Decorator;
 using DesignPatterns.Client.Facade;
+using DesignPatterns.Client.Flyweight;
+using DesignPatterns.Client.Mediator;
+using DesignPatterns.Client.Memento;
+using DesignPatterns.Client.Observer;
+using DesignPatterns.Client.Proxy;
 using DesignPatterns.Client.StateClient;
 using DesignPatterns.Client.Strategy;
+using DesignPatterns.Client.VISITOR;
+using DesignPatterns.Composite.ex2;
 using DesignPatterns.FactoryMethod;
 using DesignPatterns.FactoryMethod.Ex1.abstracts;
 using DesignPatterns.FactoryMethod.Ex1.concrete;
@@ -178,8 +187,37 @@ internal static class Program
         // var state = new StateClients();
         // state.Run();
         
-        var strategy = new StrategyClient();
-        strategy.Run();
+        // var strategy = new StrategyClient();
+        // strategy.Run();
         
+        // var proxy = new ProxyClient();
+        // proxy.Run();
+        
+        // var momento = new MementoClient();
+        // momento.Run();
+        
+        // var observer = new ObserverClient();
+        // observer.Run();
+        
+        // var chainOfResponsibility = new ChainOfResponsibilityClient();
+        // chainOfResponsibility.Run();
+        //
+        // var builderComposite = new CategoryTreeBuilder();
+        // var categoryTree = builderComposite.BuildCategoryTree();
+        //
+        // Console.WriteLine("\n=== Дерево категорий ===");
+        // categoryTree.Display(0);
+
+
+        // var commandCLietn = new CommandClient();
+        // commandCLietn.Run();
+        // var visitorClient = new VisitorClient();
+        // visitorClient.Run();
+        //
+        // var mediatorClient = new MediatorClient();
+        // mediatorClient.Run();
+        
+        var flyweightClient = new FlyweightClient();
+        flyweightClient.Run();
     }
 }

@@ -1,5 +1,6 @@
 using DesignPatterns.ADAPTER.EX1;
 using DesignPatterns.ADAPTER.EX1.model;
+using DesignPatterns.ADAPTER.ex2;
 
 namespace DesignPatterns.Client.ADAPTER;
 
@@ -32,6 +33,19 @@ public class ClientAdapter
         Console.WriteLine("Processing payment with PayPal gateway through adapter:");
         IPaymentProcessor paypalAdapter = new PayPalPaymentAdapter("merchant@example.com", "apiKey123");
         ProcessPayment(paypalAdapter, 75.50m, "GBP", "4321-8765-1234-5678");
+        
+        
+        Console.WriteLine("\n--------------------------\n");
+        Console.WriteLine("---------------------------\n");
+        
+        AnalogThermometer oldThermometer = new AnalogThermometer();
+
+        // Создание адаптера
+        ISmartSensor smartSensor = new ThermometerAdapter(oldThermometer);
+
+        // Использование в умном доме
+        SmartHomeSystem home = new SmartHomeSystem(smartSensor);
+        home.MonitorEnvironment();
     }
 
     // Client code that works with the Target interface

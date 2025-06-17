@@ -7,13 +7,13 @@ public class AudioPlayer : MediaPlayer
     public void AdjustVolume(int level)
     {
         Console.WriteLine($"Adjusting volume to {level}%");
-        _engine.SetAudioParameter("volume", level.ToString());
+        _engine.SetParameter("volume", level.ToString());
     }
 
     public void ApplyEqualizer(string preset)
     {
         Console.WriteLine($"Applying equalizer preset: {preset}");
-        _engine.SetAudioParameter("equalizer", preset);
+        _engine.SetParameter("equalizer", preset);
     }
 
     public override void Play()
