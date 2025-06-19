@@ -1,5 +1,4 @@
 namespace DesignPatterns.Memento.ex2;
-
 public class Memento
 {
     private string _content;

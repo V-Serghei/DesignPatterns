@@ -7,7 +7,7 @@ namespace DesignPatterns.FactoryMethod.Ex1.concrete;
 /// Конкретный продукт, реализующий интерфейс IDocumentProcessor
 /// </summary>
 public class WordProcessor:IDocumentProcessor
-{
+{ 
     public void Open(Document document)
     {
         Console.WriteLine($"Opening Word document: {document.FileName}");

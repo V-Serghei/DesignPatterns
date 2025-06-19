@@ -4,6 +4,6 @@ public class ConsoleLogger : ILogger
 {
     public void Log(string message)
     {
-        Console.WriteLine($"📝 ЛOГИРОВАНИЕ: {message}");
+        Console.WriteLine($" ЛOГИРОВАНИЕ: {message}");
     }
 }

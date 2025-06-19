@@ -1,5 +1,9 @@
 namespace DesignPatterns.VISITOR.ex1;
 
+
+/// <summary>
+/// Представляет собой Object Structure в паттерне Visitor.
+/// </summary>
 public class PatientRecordSystem
 {
     private readonly List<IMedicalRecord> _records = new List<IMedicalRecord>();

@@ -7,7 +7,7 @@ namespace DesignPatterns.FactoryMethod.Ex1.concrete;
 /// конкретный создатель, определяет какой продукт будет создан
 ///
 /// </summary>
-public class PdfDocument:Document
+public class PdfDocument : Document
 {
     public PdfDocument(string fileName) : base(fileName) { }
     /// <summary>

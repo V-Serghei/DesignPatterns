@@ -1,6 +1,6 @@
 using DesignPatterns.BRIDGE.EX1;
 
-namespace DesignPatterns.FactoryMethod;
+namespace DesignPatterns.Client.BRIDGE;
 
 public class ClientBridge
 {

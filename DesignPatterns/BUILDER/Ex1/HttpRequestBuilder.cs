@@ -4,7 +4,7 @@ public class HttpRequestBuilder: IHttpRequestBuilder
 {
     private HttpRequest _request = new HttpRequest();
         
-    public IHttpRequestBuilder SetMethod(string method)
+    public virtual IHttpRequestBuilder SetMethod(string method)
     {
         _request.Method = method;
         return this;

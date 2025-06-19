@@ -10,6 +10,7 @@
     <ItemGroup>
       <Folder Include="AbstractFactory\Ex2\" />
       <Folder Include="FactoryMethod\Ex1\" />
+      <Folder Include="PROTOTYPE\ex2\" />
     </ItemGroup>
 
 </Project>

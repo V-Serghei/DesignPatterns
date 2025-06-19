@@ -2,6 +2,10 @@ using DesignPatterns.VISITOR.ex1;
 
 namespace DesignPatterns.Client.VISITOR;
 
+
+/// <summary>
+/// Представляет собой Клиентский код для демонстрации паттерна Посетитель.
+/// </summary>
 public class VisitorClient
 {
     public void Run()

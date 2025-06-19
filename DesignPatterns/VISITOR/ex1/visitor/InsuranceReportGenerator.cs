@@ -1,7 +1,11 @@
 using System.Text;
 
-namespace DesignPatterns.VISITOR.ex1;
 
+
+namespace DesignPatterns.VISITOR.ex1;
+/// <summary>
+/// Представляет собой конкретный Visitor в паттерне Visitor.
+/// </summary>
 public class InsuranceReportGenerator: IMedicalRecordVisitor
 {
     private readonly StringBuilder _report = new StringBuilder();

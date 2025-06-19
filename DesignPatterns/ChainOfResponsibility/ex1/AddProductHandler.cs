@@ -3,6 +3,12 @@ namespace DesignPatterns.ChainOfResponsibility.ex1;
 public class AddProductHandler: IHandler
 {
     private IHandler _nextHandler;
+    
+    public AddProductHandler(IHandler nextHandler = null)
+    {
+        _nextHandler = nextHandler; // Инициализация следующего обработчика
+    }
+   
 
     public IHandler SetNext(IHandler next)
     {

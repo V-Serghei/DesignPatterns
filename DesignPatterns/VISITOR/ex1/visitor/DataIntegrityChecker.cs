@@ -1,5 +1,9 @@
 namespace DesignPatterns.VISITOR.ex1;
 
+
+/// <summary>
+/// Представляет собой конкретного Visitor в паттерне Visitor.
+/// </summary>
 public class DataIntegrityChecker: IMedicalRecordVisitor
 {
     private readonly List<string> _errors = new List<string>();

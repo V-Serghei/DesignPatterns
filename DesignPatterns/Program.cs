@@ -3,6 +3,7 @@ using DesignPatterns.AbstractFactory.Ex1.Concrete;
 using DesignPatterns.AbstractFactory.Ex1.Interfaces;
 using DesignPatterns.BUILDER;
 using DesignPatterns.BUILDER.Ex1;
+using DesignPatterns.ChainOfResponsibility.ex1;
 using DesignPatterns.Client.ADAPTER;
 using DesignPatterns.Client.ChainOfResponsibility;
 using DesignPatterns.Client.Command;
@@ -40,6 +41,7 @@ internal static class Program
             //Using the Factory Method pattern to create
             Document pdf = new PdfDocument("example.pdf");
             Document word = new WordDocument("example.docx");
+            
 
             pdf.Process();
             Console.WriteLine("////////////////////////////");
@@ -193,8 +195,8 @@ internal static class Program
         // var proxy = new ProxyClient();
         // proxy.Run();
         
-        // var momento = new MementoClient();
-        // momento.Run();
+        var momento = new MementoClient();
+        momento.Run();
         
         // var observer = new ObserverClient();
         // observer.Run();
@@ -217,7 +219,8 @@ internal static class Program
         // var mediatorClient = new MediatorClient();
         // mediatorClient.Run();
         
-        var flyweightClient = new FlyweightClient();
-        flyweightClient.Run();
+        // var flyweightClient = new FlyweightClient();
+        // flyweightClient.Run();
+        
     }
 }

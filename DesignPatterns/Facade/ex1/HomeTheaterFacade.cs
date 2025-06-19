@@ -25,6 +25,11 @@ public class HomeTheaterFacade
     // Упрощенный интерфейс для запуска фильма
     public void WatchMovie(string movie)
     {
+        if (string.IsNullOrEmpty(movie))
+        {
+            Console.WriteLine("Ошибка: название фильма не может быть пустым.");
+            return;
+        }
         Console.WriteLine("Подготовка к просмотру фильма...");
         _lights.Dim(10);
         _screen.Down();

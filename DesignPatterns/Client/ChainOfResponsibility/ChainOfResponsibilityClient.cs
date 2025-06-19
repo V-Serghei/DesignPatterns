@@ -12,6 +12,7 @@ public class ChainOfResponsibilityClient
             .SetNext(new AddProductHandler())
             .SetNext(new DatabaseHandler())
             .SetNext(new LogHandler());
+        
 
         // Тестовый сценарий 1: Успешная обработка
         Console.WriteLine("\n=== Успешная обработка ===");

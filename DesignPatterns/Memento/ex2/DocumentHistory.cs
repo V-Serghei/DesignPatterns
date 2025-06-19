@@ -2,6 +2,7 @@ namespace DesignPatterns.Memento.ex2;
 
 public class DocumentHistory
 {
+    
     private Stack<Memento> _history = new Stack<Memento>(); // Стек для истории
 
     // Добавить состояние в историю

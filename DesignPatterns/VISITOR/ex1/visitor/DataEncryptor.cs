@@ -1,5 +1,10 @@
 namespace DesignPatterns.VISITOR.ex1;
 
+
+
+/// <summary>
+/// Представляет собой конкретного Visitor в паттерне Visitor.
+/// </summary>
 public class DataEncryptor: IMedicalRecordVisitor
 {
     private readonly Dictionary<string, string> _encryptedData = new Dictionary<string, string>();

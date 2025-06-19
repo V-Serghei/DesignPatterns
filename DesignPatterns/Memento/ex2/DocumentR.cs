@@ -2,6 +2,7 @@ namespace DesignPatterns.Memento.ex2;
 
 public class DocumentR
 {
+    
     private string _content;        // Содержимое документа
     private int _cursorPosition;    // Позиция курсора
     private string _lastModified;   // Время последнего изменения

@@ -4,6 +4,7 @@ public class LogHandler: IHandler
 {
     private IHandler _nextHandler;
 
+   
     public IHandler SetNext(IHandler next)
     {
         if (_nextHandler == null)

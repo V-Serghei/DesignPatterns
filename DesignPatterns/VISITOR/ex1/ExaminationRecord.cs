@@ -1,5 +1,9 @@
 namespace DesignPatterns.VISITOR.ex1;
 
+
+/// <summary>
+/// Представляет собой Element в паттерне Visitor.
+/// </summary>
 public class ExaminationRecord: IMedicalRecord
 {
     public string PatientId { get; }
@@ -14,4 +18,5 @@ public class ExaminationRecord: IMedicalRecord
     }
 
     public void Accept(IMedicalRecordVisitor visitor) => visitor.Visit(this);
+    
 }
