@@ -2,7 +2,7 @@ using DesignPatterns.Decorator.ex1;
 
 namespace DesignPatterns.Client.Decorator;
 
-public class ClinentDecorator
+public class ClientDecorator
 {
     public void Run()
     {

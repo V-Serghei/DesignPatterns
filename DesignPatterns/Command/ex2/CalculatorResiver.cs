@@ -1,29 +1,29 @@
 namespace DesignPatterns.Command.ex2;
 
-public class CalculatorResiver
+public class CalculatorReceiver
 {
     private int _result;
-    
-    public CalculatorResiver(int initialValue)
+
+    public CalculatorReceiver(int initialValue)
     {
         _result = initialValue;
     }
-    
+
     public void Add(int value)
     {
         _result += value;
-        Console.WriteLine($"Результат после сложения: {_result}");
+        Console.WriteLine($"After add: {_result}");
     }
-    
+
     public void Subtract(int value)
     {
         _result -= value;
-        Console.WriteLine($"Результат после вычитания: {_result}");
+        Console.WriteLine($"After subtract: {_result}");
     }
-    
+
     public void Multiply(int value)
     {
         _result *= value;
-        Console.WriteLine($"Результат после умножения: {_result}");
+        Console.WriteLine($"After multiply: {_result}");
     }
 }
