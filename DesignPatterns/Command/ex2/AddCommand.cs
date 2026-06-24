@@ -1,27 +1,25 @@
 namespace DesignPatterns.Command.ex2;
 
-public class AddCommand: ICommand
+public class AddCommand : ICommand
 {
-    private int _value;
-    private CalculatorResiver _calculatorResiver;
-    
-    public AddCommand(CalculatorResiver calculatorResiver, int value)
+    private readonly int _value;
+    private readonly CalculatorReceiver _receiver;
+
+    public AddCommand(CalculatorReceiver receiver, int value)
     {
-        _calculatorResiver = calculatorResiver;
+        _receiver = receiver;
         _value = value;
     }
-    
-    
+
     public void Execute()
     {
-        _calculatorResiver.Add(_value);
-        Console.WriteLine($"Выполнена команда сложения: {_value}");
+        _receiver.Add(_value);
+        Console.WriteLine($"Executed Add({_value})");
     }
 
     public void Undo()
     {
-        _calculatorResiver.Subtract(_value);
-        Console.WriteLine($"Отменена команда сложения: {_value}");
+        _receiver.Subtract(_value);
+        Console.WriteLine($"Undone Add({_value})");
     }
-    
 }
