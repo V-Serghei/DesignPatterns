@@ -1,5 +1,33 @@
+# Build output
 bin/
 obj/
+out/
+
+# NuGet
 /packages/
-riderModule.iml
+*.nupkg
+*.snupkg
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider / ReSharper
+.idea/
+*.DotSettings.user
 /_ReSharper.Caches/
+riderModule.iml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets / local config
+*.env
+appsettings.*.json
+!appsettings.json
+secrets.json
