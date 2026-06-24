@@ -1,13 +1,13 @@
 # Design Patterns in C#
 
-A reference catalogue of Gang-of-Four design patterns implemented in C# (.NET 9).
+A reference catalogue of Gang-of-Four design patterns implemented in C# (.NET 10).
 Each pattern lives in its own folder with one or more self-contained examples.
 Client code that wires the examples together is collected under `Client/`.
 
 ## Tech stack
 
-- **Language:** C# 13
-- **Runtime:** .NET 9
+- **Language:** C# 14
+- **Runtime:** .NET 10 (LTS)
 - **IDE:** JetBrains Rider / Visual Studio
 
 ## Quick start
